@@ -1,6 +1,7 @@
 //selecting all required elements
 const filterItem = document.querySelector(".items");
 const filterImg = document.querySelectorAll(".gallery .image");
+
 window.onload = ()=>{ //after window loaded
   filterItem.onclick = (selectedItem)=>{ //if user click on filterItem div
     if(selectedItem.target.classList.contains("item")){ //if user selected item has .item class
@@ -25,6 +26,7 @@ window.onload = ()=>{ //after window loaded
     filterImg[i].setAttribute("onclick", "preview(this)"); //adding onclick attribute in all available images
   }
 }
+
 //fullscreen image preview function
 //selecting all required elements
 const previewBox = document.querySelector(".preview-box"),
@@ -32,8 +34,9 @@ categoryName = previewBox.querySelector(".title p"),
 previewImg = previewBox.querySelector("img"),
 closeIcon = previewBox.querySelector(".icon"),
 shadow = document.querySelector(".shadow");
+
 function preview(element){
-  //once user click on any image then remove the scroll bar of the body, so user cant scroll up or down
+  //once user click on any image then remove the scroll bar of the body, so user can't scroll up or down
   document.querySelector("body").style.overflow = "hidden";
   let selectedPrevImg = element.querySelector("img").src; //getting user clicked image source link and stored in a variable
   let selectedImgCategory = element.getAttribute("data-name"); //getting user clicked image data-name value
@@ -47,3 +50,4 @@ function preview(element){
     document.querySelector("body").style.overflow = "auto"; //show the scroll bar on body
   }
 }
+    
