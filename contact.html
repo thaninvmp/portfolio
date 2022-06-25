@@ -1,112 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="/css/contact.css">
-  
-  <title>Zent People</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Fontawesome icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <section class="contact-section">
-    <div class="contact bg">
-      <h3>Get in Touch with Us</h3>
-      <h2>Contact Us</h2>
-      <div class="line">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero vitae, repellendus labore, laborum iste aspernatur fugit, cupiditate autem recusandae reiciendis eum adipisci cum! Minus corrupti quae soluta laborum commodi sit.</p>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zent People</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- alert messages start 
+    <div class="alert-success">
+      <span>Message Sent! Thank you for contacting us.</span>
     </div>
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div>
+    alert messages end-->
 
-
-    <div class="contact-body">
+    <!--contact section start-->
+    <div class="contact-section">
       <div class="contact-info">
-        <div>
-          <span><i class="fas fa-mobile-alt"></i></span>
-          <span>Phone No.</span>
-          <span class="text">8248-2043-44</span>
-        </div>
+        <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
+        <div><i class="fas fa-envelope"></i>contact@email.com</div>
+        <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
+        <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
       </div>
-
-      <div>
-        <span><i class="fas fa-envelope-open"></i></span>
-        <span>E-mail</span>
-        <span class="text">thaningovindaraj@gmail.com</span>
-      </div>
-    </div>
-
-    <div>
-      <span><i class="fas fa-marker-alt"></i></span>
-      <span>Address</span>
-      <span class="text">15/21, Sadaiyappa Gounder Street, Vadaku Moorthi Palayam, Kodumudi, Erode-638151</span>
-    </div>
-  </div>
-
-  <div>
-    <span><i class="fas fa-clock"></i></span>
-    <span>Website Opening Hours</span>
-    <span class="text">Always Open</span>
-  </div>
-</div>
-
-     <div class="contact-form">
-      <form >
-        <div>
-          <input type="text" class="form-control" placeholder="First Name">
-
-          <input type="text" class="form-control" placeholder="Last Name">
-
-          <input type="email" class="form-control" placeholder="E-Mail">
-
-          <input type="text" class="form-control" placeholder="Phone">
-
-        </div> 
-
-        <textarea rows="5" placeholder="message" class="form-control"></textarea>
-
-        <input type="submit" class="send-btn" value="Send Message">
-      </form>
-
-      <div>
-        <img src="/images/contact-png.png" alt="">
-      </div>
-     </div>
-    </div>
-
-    <div class="map">
-      <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4095.4526469702037!2d77.86334799316799!3d11.067585371289486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba981bbd8996bb5%3A0x96b3df39af0472f6!2sVadakku%20Moorthi%20Palayam!5e1!3m2!1sen!2sin!4v1655616991304!5m2!1sen!2sin"
-       width="100%" 
-       height="450" 
-       style="border:0;" 
-       allowfullscreen="" 
-       loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-    <div class="contact-footer">
-      <h3>Follow Us</h3>
-      <div class="social-links">
-        
-        <a href="#" class="fab fa-facebook-f"></a>
-
-        <a href="#" class="fab fa-twitter"></a>
-
-        <a href="#" class="fab fa-instagram"></a>
-
-        <a href="#" class="fab fa-github"></a>
-
-        <a href="#" class="fab fa-whatsapp"></a>
-
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact" action="" method="post">
+          <input
+            type="text"
+            name="name"
+            class="text-box"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="text-box"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input type="submit" name="submit" class="send-btn" value="Send" />
+        </form>
       </div>
     </div>
-  </section>
-</body>
+    <!--contact section end-->
+  </body>
 </html>
